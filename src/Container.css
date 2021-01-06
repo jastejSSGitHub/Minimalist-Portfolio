@@ -1,0 +1,62 @@
+.project-container {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  background: rgb(255, 255, 255);
+  fill: Solid #fffefc;
+  margin-top: 25px;
+  display: flex;
+  border-radius: 52px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 2px 7px 26px rgb(206, 249, 255);
+  height: 79vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.project-container::-webkit-scrollbar {
+  display: none;
+}
+
+.project-container-left {
+  flex: 0.6;
+}
+
+.project-container-right {
+  display: flex;
+  justify-content: center;
+  flex: 0.4;
+}
+#ux-project-container {
+  display: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list a {
+  text-decoration: none;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(50% 50% at 50% 50%, #fc3737 41.15%, #c91616 100%);
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+}
+
+.hovertextandimage {
+  display: flex;
+  flex-direction: column;
+}

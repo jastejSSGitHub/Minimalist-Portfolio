@@ -1,0 +1,148 @@
+.lefttab {
+  background-color: rgb(248, 248, 248);
+}
+
+.imagebox0 {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+  background: linear-gradient(170deg, #0a7fb6, #034463);
+}
+.imagebox2 {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+
+  background: linear-gradient(170deg, rgb(9, 163, 252), rgb(8, 18, 153) 80%);
+}
+
+.imagebox1 {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+  background: linear-gradient(170deg, rgb(194, 40, 40), rgb(128, 16, 2) 80%);
+}
+
+.imagebox3 {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+  background: linear-gradient(170deg, rgb(252, 187, 46), rgb(199, 119, 0) 80%);
+}
+.imagebox4 {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+  background: linear-gradient(170deg, rgb(106, 185, 32), rgb(58, 119, 8) 80%);
+}
+
+.imagebox5 {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+  background: linear-gradient(170deg, #ff9900, #f36100);
+}
+
+.imagebox6 {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+  background: linear-gradient(170deg, #c91616, rgb(148, 10, 10) 80%);
+}
+
+.imageemoticon {
+  width: 100px;
+  padding-left: 40%;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hovertext {
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  padding: 100px;
+  padding-bottom: 0;
+}
+
+.footericons {
+  color: black;
+  font-weight: 200;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: right;
+  margin-top: 15px;
+}
+
+.gmailimageclass {
+  width: 140%;
+  height: 80%;
+  margin-top: 30px;
+  /* transform: skewX(3deg);
+  transform: skewY(3deg);
+  transform: rotate(3deg); */
+}
+
+.sphvereimageclass {
+  width: 140%;
+  height: 80%;
+  margin-top: 30px;
+  /* transform: skewX(30deg);
+  transform: skewY(-3deg);
+  transform: rotate(-3deg); */
+}
+
+.codinngproject3 {
+  background: linear-gradient(170deg, rgb(194, 40, 40), rgb(128, 16, 2) 80%);
+}
+
+.paddingclass {
+  padding-bottom: 20px;
+}

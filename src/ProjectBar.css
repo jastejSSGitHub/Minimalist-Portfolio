@@ -1,0 +1,124 @@
+.item-heading-tag {
+  /*Flex box container for tags and headings*/
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.round-tags {
+  /*Round tags for details*/
+  margin-top: 20px;
+  /*background: #ff9b9b;*/
+  border-radius: 128px;
+  height: 27px;
+  margin-right: 6px;
+}
+
+.item-heading-tag {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  margin-right: 20px;
+  /* identical to box height */
+  display: flex;
+  color: #5e5e5e;
+}
+.item-heading-tag p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 11px;
+  color: #444444;
+  padding: 10px;
+  margin-top: -2px;
+}
+
+.heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height */
+  margin-right: 20px;
+
+  color: #343434;
+}
+
+.active {
+  background-color: #c6b6a5;
+}
+
+/*----------------------------------REGULARList item of project---------------------*/
+.list-item-container {
+  width: 775px;
+  margin-left: 60px;
+  background: #fffcfc;
+  box-shadow: 0px 18px 44px rgba(150, 150, 150, 0.25);
+  border-radius: 22px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.list-item-container:hover {
+  width: 800px;
+  /*background: conic-gradient(
+    from 270deg at 52.32% 100%,
+    #c92222 0deg,
+    #f13232 360deg
+  );*/
+  box-shadow: -8px 11px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/*.list-item-container-selected {
+  background-color: black;
+}*/
+
+.description {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #313131;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-top: 0;
+}
+
+.list-item-container:hover > .description {
+  color: white;
+}
+.list-item-container:hover > .item-heading-tag > .heading {
+  color: white;
+}
+
+.list-item-container:hover > .item-heading-tag > .round-tags > p {
+  color: rgb(34, 34, 34);
+}
+
+.project-heading {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 350px;
+  border-radius: 128px;
+  margin-top: 20px;
+}
+
+#ux-project1 {
+  background-color: conic-gradient(
+    from 270deg at 52.32% 100%,
+    #e98604 0deg,
+    #7e4401 360deg
+  );
+  color: #7e4401;
+}

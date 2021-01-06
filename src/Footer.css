@@ -1,0 +1,28 @@
+.footer__icons__right {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer__left {
+  right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer__left a {
+  text-decoration: none;
+}
+.footer__right h2 {
+  position: absolute;
+  right: 3vw;
+  color: rgb(48, 47, 47);
+  font-weight: 200;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: right;
+  padding-top: 15px;
+}

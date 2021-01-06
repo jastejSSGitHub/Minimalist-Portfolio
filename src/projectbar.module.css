@@ -1,0 +1,13 @@
+.demo {
+  width: 800px;
+  background: conic-gradient(
+    from 270deg at 52.32% 100%,
+    #c92222 0deg,
+    #f13232 360deg
+  );
+  box-shadow: -8px 11px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding: 20px;
+}
