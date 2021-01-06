@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is my portfolio website built in React JS, using Redux for state management, and Material UI for icons. 
 
 ## Available Scripts
 
