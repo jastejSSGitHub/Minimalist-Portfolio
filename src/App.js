@@ -12,7 +12,9 @@ import 'aos/dist/aos.css';
 
 function App() {
   AOS.init();
-
+  useEffect(() => {
+    document.title = "Jastej Sehra Portfolio"
+ }, []);
   return (
     
     <div className="app">

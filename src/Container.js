@@ -124,15 +124,15 @@ function Container() {
                                 </div>
                                
                                 
-                                <div 
+                                {/*<div 
                                     onMouseEnter={()=> dispatch(greenHoveredOn())}  
                                     onMouseLeave={()=> dispatch(greenHoveredOff())}
                                     className="projectBar4">
-                                  <a href="http://healthsupps.jastejsehra.com/">
+                                  <a href="https://healthsupps.jastejsehra.com/">
                                     <ProjectBar 
                                         title="HealthSupps"
-                                        description="Skip The Dishes is a food delivery app based in Canada. 
-                                        This redesign is made to improve users that are older and less tech savvy"
+                                        description="Built in PHP, HealthSupps is a Full stack ecommerce website for supplements for good health. 
+                                        UI is made in Figma, and programmed PHP, powered by MySQL database"
                                         tag1="PHP"
                                         tag2="MySQL"
                                         tag3="Bootsrap"
@@ -140,7 +140,7 @@ function Container() {
                                         tagcolor="#c2fcb4"
                                         />
                                         </a>
-                                </div>
+                                </div>*/}
 
                                 <div 
                                     onMouseEnter={()=> dispatch(orangeHoveredOn())} 
@@ -168,11 +168,13 @@ function Container() {
                                 <a href="https://airbnb-clone-10ff9.web.app/">
                                     <ProjectBar 
                                         title="AirBnb Webapp"
-                                        description="Emulation of Amazon shopping webapp with firebase authentication, and dynamic cart functionality
-                                        for learning purposes"
+                                        description="Emulation of one of my favourite User Interfaces of all time, AirBnb's website. Build in React, has a functional date picker 
+                                        and a 'search for listings' page that emulates the experience of the official website"
                                         tag1="React"
                                         tag2="Firebase"
                                         tag3="material UI"
+                                        tag4="Date Picker"
+
                                         hovercolor="#c91616"
                                         tagcolor="#f3adad"
                                         />
