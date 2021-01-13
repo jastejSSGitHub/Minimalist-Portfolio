@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 
 function App() {
   AOS.init();
+  
   useEffect(() => {
     document.title = "Jastej Sehra Portfolio"
  }, []);
@@ -19,7 +20,7 @@ function App() {
     
     <div className="app">
       <Tabs />
-      <Container/>
+      
       <Footer/>
     </div>
   );

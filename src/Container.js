@@ -128,7 +128,7 @@ function Container() {
                                     onMouseEnter={()=> dispatch(greenHoveredOn())}  
                                     onMouseLeave={()=> dispatch(greenHoveredOff())}
                                     className="projectBar4">
-                                  <a href="https://healthsupps.jastejsehra.com/">
+                                  <a href="">
                                     <ProjectBar 
                                         title="HealthSupps"
                                         description="Built in PHP, HealthSupps is a Full stack ecommerce website for supplements for good health. 

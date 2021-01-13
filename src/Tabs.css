@@ -10,10 +10,11 @@
   font-size: 5px;
   padding: 0px;
   list-style: none;
-  box-shadow: 2px 7px 26px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 20px rgba(70, 70, 70, 0.25);
   border-radius: 128px;
   padding-top: 5px;
   padding-bottom: 5px;
+  filter: blur(0.3px);
 }
 .project-heading {
   display: flex;
@@ -25,6 +26,11 @@
 }
 #ux-heading:hover,
 #front-heading:hover {
+  background-color: rgb(196, 196, 196);
+  color: black;
+}
+
+.codetab {
   background-color: rgb(196, 196, 196);
   color: black;
 }

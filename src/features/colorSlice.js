@@ -10,7 +10,8 @@ export const colorSlice = createSlice({
     IsPinkHoverOn: false,
     IsBrownHoverOn: false,
     darkModeOn: false,
-    codingProjectsOn: false
+    codingProjectsOn: false,
+    uiprojectsOn: false
   },
   reducers: {
     //blue Sphvere  
@@ -30,6 +31,8 @@ export const colorSlice = createSlice({
 
     //darmode on
     darkModeOn: (state) => {state.darkModeOn = true;}, darkModeOff: (state) => {state.darkModeOn = false;},
+    //coding container on
+    codingContainerOn: (state) => {state.codingProjectsOn = true;}, codingContainerOff: (state) => {state.codingProjectsOn = false;},
   },
 });
 
@@ -45,8 +48,9 @@ export const projectThreeIsHovered = (state) => state.color.IsYellowHoverOn; //l
 export const projectFourIsHovered = (state) => state.color.IsGreenHoverOn; //healthsupps
 export const projectFiveIsHovered = (state) => state.color.IsOrangeHoverOn; //amazon
 export const projectSixIsHovered = (state) => state.color.IsPinkHoverOn; //amazon
-
 export const DarkModeIsOn = (state) => state.color.darkModeOn;
+export const codingContainerIsClicked = (state) => state.color.codingProjectsOn; //coding container on
+
 
 
 export default colorSlice.reducer;
