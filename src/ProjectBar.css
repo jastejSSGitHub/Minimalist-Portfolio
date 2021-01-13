@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .item-heading-tag {
   /*Flex box container for tags and headings*/
   display: flex;
@@ -5,7 +7,7 @@
   padding-right: 70px;
 }
 .round-tags {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Montserrat", sans-serif;
   /*Round tags for details*/
   margin-top: 20px;
   /*background: #ff9b9b;*/
@@ -15,7 +17,7 @@
 }
 
 .item-heading-tag {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -26,7 +28,7 @@
   color: #5e5e5e;
 }
 .item-heading-tag p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -37,7 +39,7 @@
 }
 
 .heading {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -64,7 +66,7 @@
 }
 
 .list-item-container:hover {
-  width: 800px;
+  width: 775px;
   /*background: conic-gradient(
     from 270deg at 52.32% 100%,
     #c92222 0deg,
@@ -72,7 +74,7 @@
   );*/
   box-shadow: -8px 11px 12px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 50px;
   padding: 20px;
   cursor: pointer;
@@ -83,7 +85,7 @@
 }*/
 
 .description {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;

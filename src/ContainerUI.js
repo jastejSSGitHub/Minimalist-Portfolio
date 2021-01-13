@@ -51,6 +51,23 @@ function ContainerUI() {
                                     onMouseEnter={()=> dispatch(redHoveredOn())} 
                                     onMouseLeave={()=> dispatch(redHoveredOff())} 
                                     className="projectBar1">
+                                    <a href="https://www.figma.com/proto/71GaizBVRX0PouJipYaCoH/Untitled?node-id=5%3A1996&scaling=min-zoom">
+                                    <ProjectBar 
+                                            title="Website Redesign"
+                                            description="UI/UX Redesign of a tech website that connects developers with clients"
+                                            tag1="UI/UX Redesign"
+                                            tag2="Mockup"
+                                            tag3="Interaction Design"
+                                            hovercolor='#eea300'
+                                            tagcolor=' #ebe2b0'
+                                    />      
+                                    </a>
+                                </div>
+                                                         
+                                {/*<div data-aos="fade-up"
+                                    onMouseEnter={()=> dispatch(redHoveredOn())} 
+                                    onMouseLeave={()=> dispatch(redHoveredOff())} 
+                                    className="projectBar1">
                                     <a href="https://clone-9cd20.web.app/ ">
                                     <ProjectBar 
                                             title="App Redesign"
@@ -62,26 +79,7 @@ function ContainerUI() {
                                             tagcolor='#ffaeae'
                                     />      
                                     </a>
-                                </div>
-                                                         
-                                <div data-aos="fade-up"
-                                    onMouseEnter={()=> dispatch(blueHoveredOn())}  
-                                    onMouseLeave={()=> dispatch(blueHoveredOff())}  
-                                    className="projectBar2">
-                                    <a href="https://www.sphvere.com//">
-                                    <ProjectBar 
-                                        title="Webapp Redesign"
-                                        description="My team's startup website for a service that that lets creative people connect and 
-                                        join new projects and meet other creative developers and designers."
-                                        tag1="Case Study"
-                                        tag2="UI/UX Redesign"
-                                        tag3="Figma"
-                                        tag4="Adobe XD"
-                                        hovercolor="#3792cf"
-                                        tagcolor="#b2e3fa"
-                                        />
-                                    </a>
-                                </div>
+                                </div>*/}
                                 
                                 
                                 
@@ -99,15 +97,12 @@ function ContainerUI() {
                             </div>}
                         
                         {projectOneIsHoveredOpen &&
-                            <div className={styles.imagebox1}>
-                                <img className={styles.gmailimageclass} src={"https://i.ibb.co/hc8PgG7/skip.png"} alt=""/>
+                            <div className={styles.imageboxui1}>
+                                <img className={styles.gmailimageclass} src={"https://i.ibb.co/fqh6YhF/Frame-1.png"} alt=""/>
                             </div>
                              }
 
-                        {projectTwoIsHoveredOpen &&
-                            <div className={styles.imagebox2}>
-                                <img className={styles.sphvereimageclass} src={"https://i.ibb.co/XyP4F51/Sphvere.webp"} alt=""/>
-                            </div>}
+                        
 
                       
 

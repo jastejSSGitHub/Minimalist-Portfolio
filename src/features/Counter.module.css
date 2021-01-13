@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .lefttab {
   background-color: rgb(248, 248, 248);
-  font-family: "futura";
+  font-family: "Montserrat", sans-serif;
 }
 
 .imagebox0 {
@@ -90,7 +92,20 @@
   height: 400px;
   margin-top: 60px;
   position: fixed;
-  background: linear-gradient(170deg, #c91616, rgb(148, 10, 10) 80%);
+  background: linear-gradient(170deg, #eea300, #eea300 80%);
+}
+
+.imageboxui1 {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+  background: linear-gradient(170deg, #eea300, #eea300 80%);
 }
 
 .imageemoticon {
@@ -114,7 +129,7 @@
 .footericons {
   color: black;
   font-weight: 200;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
