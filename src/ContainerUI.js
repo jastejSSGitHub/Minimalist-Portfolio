@@ -51,7 +51,7 @@ function ContainerUI() {
                                     onMouseEnter={()=> dispatch(redHoveredOn())} 
                                     onMouseLeave={()=> dispatch(redHoveredOff())} 
                                     className="projectBar1">
-                                    <a href="https://www.figma.com/proto/71GaizBVRX0PouJipYaCoH/Untitled?node-id=5%3A1996&scaling=min-zoom">
+                                    <a href="https://www.figma.com/proto/71GaizBVRX0PouJipYaCoH/Untitled?node-id=5%3A1996&scaling=min-zoom" target="_blank">
                                     <ProjectBar 
                                             title="Website Redesign"
                                             description="UI/UX Redesign of a tech website that connects developers with clients"

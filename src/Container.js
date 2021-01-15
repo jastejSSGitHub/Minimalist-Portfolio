@@ -49,8 +49,9 @@ function Container() {
                                 <div data-aos="fade-up"
                                     onMouseEnter={()=> dispatch(darkModeOn())} 
                                     onMouseLeave={()=> dispatch(darkModeOff())} 
-                                    className="projectBar1">
-                                    <a href="https://covid-19-tracker-48fd8.web.app/">
+                                    className="projectBar1"
+                                    >
+                                    <a href="https://covid-19-tracker-48fd8.web.app/" target="_blank">
                                         <ProjectBar 
                                                     title="Covid-19 Tracker"
                                                     description="A realtime and responsive Covid-19 Tracker with data visualization, displays cases all over the world with
@@ -70,7 +71,7 @@ function Container() {
                                     onMouseEnter={()=> dispatch(redHoveredOn())} 
                                     onMouseLeave={()=> dispatch(redHoveredOff())} 
                                     className="projectBar1">
-                                    <a href="https://clone-9cd20.web.app/ ">
+                                    <a href="https://clone-9cd20.web.app/ " target="_blank">
                                     <ProjectBar 
                                             title="Gmail Web App "
                                             description="A dynamic emulation of the Gmail email app, with Google Authentication, and email state management for learning purposes"
@@ -88,7 +89,7 @@ function Container() {
                                     onMouseEnter={()=> dispatch(blueHoveredOn())}  
                                     onMouseLeave={()=> dispatch(blueHoveredOff())}  
                                     className="projectBar2">
-                                    <a href="https://www.sphvere.com//">
+                                    <a href="https://www.sphvere.com//" target="_blank">
                                     <ProjectBar 
                                         title="Sphvere Web App"
                                         description="My team's startup website for a service that that lets creative people connect and 
@@ -108,7 +109,7 @@ function Container() {
                                     onMouseLeave={()=> dispatch(yellowHoveredOff())} 
                                     href={linkedinUrl}
                                     className="projectBar3">
-                                    <a href="https://linkedin-clone-47bb4.web.app/">
+                                    <a href="https://linkedin-clone-47bb4.web.app/" target="_blank">
                                         <ProjectBar 
                                             title="LinkedIn Web App"
                                             description="A clone of the recuiting website, with secure authentication, and 
@@ -146,7 +147,7 @@ function Container() {
                                     onMouseEnter={()=> dispatch(orangeHoveredOn())} 
                                     onMouseLeave={()=> dispatch(orangeHoveredOff())} 
                                     className="projectBar5">
-                                <a href="https://clone-a861a.web.app/">
+                                <a href="https://clone-a861a.web.app/" target="_blank">
                                     <ProjectBar 
                                         title="Amazon React"
                                         description="Emulation of Amazon shopping webapp with firebase authentication, and dynamic cart functionality
@@ -165,7 +166,7 @@ function Container() {
                                     onMouseEnter={()=> dispatch(pinkHoveredOn())} 
                                     onMouseLeave={()=> dispatch(pinkHoveredOff())} 
                                     className="projectBar5">
-                                <a href="https://airbnb-clone-10ff9.web.app/">
+                                <a href="https://airbnb-clone-10ff9.web.app/" target="_blank">
                                     <ProjectBar 
                                         title="AirBnb Webapp"
                                         description="Emulation of one of my favourite User Interfaces of all time, AirBnb's website. Build in React, has a functional date picker 
