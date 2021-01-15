@@ -15,7 +15,7 @@ function Footer() {
                         <a href="https://github.com/jastejSSGitHub" className={styles.footericons}>GitHub</a>
                     </IconButton>
                     <IconButton>
-                        <a className={styles.footericons}>Resume</a>
+                        <a href="https://www.udrop.com/8XM9/FrontendResumeJastej.pdf" className={styles.footericons}>Resume</a>
                     </IconButton>                    
                 </div>
                 <div className="footer__right">
