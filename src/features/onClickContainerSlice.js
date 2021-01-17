@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const onClickContainerSlice = createSlice({
   name: 'click',
   initialState: {
-    IsCodingClicked: false,
+    IsCodingClicked: true,
     IsUIClicked: false,
     IsCodeColorOn: false,
     

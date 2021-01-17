@@ -21,31 +21,33 @@ function Tabs() {
     const [background, setBackground]= useState('blue')
     const [color, setColor] = useState("#424246");
 
-    const styles={
-        backgroundColor :`${background}`,
-        color: "black",
-        boxShadow: "4px 4px 20px rgb(134, 134, 134)",
-        padding: "8px",
-
-    }
+   
     const setStyle = (background, color) => {
         setBackground(background);
         setColor(color);
       };
+
+    const codingClickSet = () => {
+        {dispatch(codingClickedOn(), dispatch(codeClickedColorOn()), dispatch(UiClickedOff()))} 
+
+    }
+    const UIClickSet = () => {
+        {dispatch(UiClickedOn(), dispatch(codingClickedOff()))}
+    }
     return (
         <div className="tabs">
             <div class="project-heading">
                 <div 
                     onMouseEnter={()=>{setStyle("black", "#fdfdfd")}}
-                    className={codecolorSelectorOn && styles.activetabs}
-                    onClick={()=>{dispatch(codingClickedOn(), dispatch(codeClickedColorOn()), dispatch(UiClickedOff()))}}
+                    className={codingcontainerSelectorOn && styles.activetabs}
+                    onClick={codingClickSet}
                     id="ux-heading">
                         <h1>CODING PROJECTS</h1>
                 </div>
                 <div 
-                    className={styles.uitab} 
+                    className={UIcontainerSelectorOn && styles.activetabs} 
                     id="front-heading" 
-                    onClick={()=>dispatch(UiClickedOn(), dispatch(codingClickedOff()))}>
+                    onClick={UIClickSet}>
                    <h1>UI/UX PROJECTS</h1>
                 </div>
                 <div className="tabs__nav">
