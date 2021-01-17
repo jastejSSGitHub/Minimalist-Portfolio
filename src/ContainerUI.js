@@ -68,7 +68,7 @@ function ContainerUI() {
                                     onMouseEnter={()=> dispatch(blueHoveredOn())} 
                                     onMouseLeave={()=> dispatch(blueHoveredOff())} 
                                     className="projectBar1">
-                                    <a href="https://www.figma.com/proto/R8iCOcojcySbQGUpd4lHHT/Untitled?node-id=1%3A5&scaling=scale-down">
+                                    <a href="https://www.figma.com/proto/R8iCOcojcySbQGUpd4lHHT/Untitled?node-id=1%3A5&scaling=scale-down" target="_blank">
                                     <ProjectBar 
                                             title="App Redesign"
                                             description="Case Study and a UI/UX Redesign of the food app Skip The Dishes. From research to final prototype mockup."

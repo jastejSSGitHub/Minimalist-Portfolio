@@ -44,18 +44,20 @@ function Tabs() {
     return (
         <div className="tabs">
             <div class="project-heading">
+                
+                <div 
+                    className={UIcontainerSelectorOn && styles.activetabsUI }
+                    id="front-heading" 
+                    onClick={UIClickSet}>
+                   <h1>UI/UX Projects</h1>
+                </div>
+
                 <div 
                     onMouseEnter={()=>{setStyle("black", "#fdfdfd")}}
                     className={codingcontainerSelectorOn && styles.activetabs}
                     onClick={codingClickSet}
                     id="ux-heading">
-                        <h1>CODING PROJECTS</h1>
-                </div>
-                <div 
-                    className={UIcontainerSelectorOn && styles.activetabsUI }
-                    id="front-heading" 
-                    onClick={UIClickSet}>
-                   <h1>UI/UX PROJECTS</h1>
+                        <h1>Coding Projects</h1>
                 </div>
 
                 <div 

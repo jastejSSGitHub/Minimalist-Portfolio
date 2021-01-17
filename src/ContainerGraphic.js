@@ -68,7 +68,7 @@ function ContainerGraphic() {
                                     onMouseEnter={()=> dispatch(blueHoveredOn())} 
                                     onMouseLeave={()=> dispatch(blueHoveredOff())} 
                                     className="projectBar1">
-                                    <a href="https://www.figma.com/proto/R8iCOcojcySbQGUpd4lHHT/Untitled?node-id=1%3A5&scaling=scale-down">
+                                    <a  href="https://www.figma.com/proto/R8iCOcojcySbQGUpd4lHHT/Untitled?node-id=1%3A5&scaling=scale-down" target="_blank">
                                     <ProjectBar 
                                             title="App Redesign"
                                             description="Case Study and a UI/UX Redesign of the food app Skip The Dishes. From research to final prototype mockup."
@@ -91,7 +91,7 @@ function ContainerGraphic() {
                          !projectFourIsHoveredOpen && !projectFiveIsHoveredOpen && !projectSixIsHoveredOpen && !DarkModeTurnedOn &&
                             <div data-aos="fade-down" className={styles.imagebox5}>
                                 <div className="hovertextandimage">
-                                    <h1 className={styles.hovertext}>Hover and Scroll on the list to see my UI/UX projects </h1>
+                                    <h1 className={styles.hovertext}>Hover and Scroll on the list to see my Miscellaneous Graphic projects </h1>
                                     <img className={styles.imageemoticon} src={hoverphoto}></img>
                                 </div> 
                             </div>}
