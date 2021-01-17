@@ -23,7 +23,7 @@ import {
 
 let linkedinUrl="https://www.linkedin.com/in/jastej-sehra/";
 
-function ContainerUI() {
+function ContainerGraphic() {
     const [isHovered,setIsHovered]= useState('red')
     const projectZeroIsHoveredOpen = useSelector(projectZeroIsHovered);
     const projectTwoIsHoveredOpen = useSelector(projectTwoIsHovered);
@@ -127,4 +127,4 @@ function ContainerUI() {
     )
 }
 
-export default ContainerUI
+export default ContainerGraphic

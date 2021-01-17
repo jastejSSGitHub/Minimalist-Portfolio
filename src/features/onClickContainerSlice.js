@@ -5,6 +5,7 @@ export const onClickContainerSlice = createSlice({
     IsCodingClicked: true,
     IsUIClicked: false,
     IsCodeColorOn: false,
+    IsGraphicClicked: false
     
   },
   reducers: {
@@ -15,16 +16,21 @@ export const onClickContainerSlice = createSlice({
     //yellow linkedin
     codeClickedColorOn:(state) => {state.IsCodeColorOn  = true;}, codeClickedColorOff: (state) => {state.IsCodeColorOn = false;},
 
+    graphicClickedOn:(state) => {state.IsGraphicClicked = true;}, graphicClickedOff: (state) => {state.IsGraphicClicked = false;},
+
   },
 });
 
 export const { 
-codingClickedOff , codingClickedOn, UiClickedOn, UiClickedOff,IsCodeColorOn, codeClickedColorOn} = onClickContainerSlice.actions;
+codingClickedOff , codingClickedOn, UiClickedOn, UiClickedOff,IsCodeColorOn, codeClickedColorOn, graphicClickedOn, graphicClickedOff} = onClickContainerSlice.actions;
 
 //selector
 export const codingSelector = (state) => state.click.IsCodingClicked; //gmail
 export const UiSelector = (state) => state.click.IsUIClicked; //sphver
 export const codecolorSelector = (state) => state.click.IsCodeColorOn; //sphver
+export const graphicSelector = (state) => state.click.IsGraphicClicked; //sphver
+
+
 
 
 

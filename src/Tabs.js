@@ -5,18 +5,21 @@ import {useState} from "react"
 import './Tabs.css'
 import styles from './features/Counter.module.css';
 import {useSelector} from "react-redux"
-import { codeClickedColorOn, codecolorSelector, IsCodeColorOn,codingClickedOn,UiClickedOn,UiClickedOff,codingClickedOff ,codingSelector,UiSelector} from "./features/onClickContainerSlice";
+import { codeClickedColorOn, codecolorSelector, IsCodeColorOn,
+    codingClickedOn,UiClickedOn,UiClickedOff,codingClickedOff ,
+    codingSelector,UiSelector, graphicSelector, graphicClickedOn, graphicClickedOff} from "./features/onClickContainerSlice";
  
 import Container from './Container';
 import ContainerUI from './ContainerUI';
 import Footer from './Footer';
+import ContainerGraphic from './ContainerGraphic'
 
 function Tabs() {
 
     const dispatch = useDispatch();
     const codingcontainerSelectorOn = useSelector(codingSelector);
     const UIcontainerSelectorOn = useSelector(UiSelector);
-    const codecolorSelectorOn = useSelector(codecolorSelector);
+    const graphicContainerSelectorOn = useSelector(graphicSelector);
 
     const [background, setBackground]= useState('blue')
     const [color, setColor] = useState("#424246");
@@ -28,11 +31,15 @@ function Tabs() {
       };
 
     const codingClickSet = () => {
-        {dispatch(codingClickedOn(), dispatch(codeClickedColorOn()), dispatch(UiClickedOff()))} 
+        {dispatch(codingClickedOn(), dispatch(codeClickedColorOn()), dispatch(UiClickedOff()), dispatch(graphicClickedOff()))} 
 
     }
     const UIClickSet = () => {
-        {dispatch(UiClickedOn(), dispatch(codingClickedOff()))}
+        {dispatch(UiClickedOn(), dispatch(codingClickedOff()), dispatch(graphicClickedOff()))}
+    }
+
+    const GraphicClickSet = () => {
+        {dispatch(graphicClickedOn(), dispatch(codingClickedOff()), dispatch(UiClickedOff()))}
     }
     return (
         <div className="tabs">
@@ -45,11 +52,19 @@ function Tabs() {
                         <h1>CODING PROJECTS</h1>
                 </div>
                 <div 
-                    className={UIcontainerSelectorOn && styles.activetabs} 
+                    className={UIcontainerSelectorOn && styles.activetabsUI }
                     id="front-heading" 
                     onClick={UIClickSet}>
                    <h1>UI/UX PROJECTS</h1>
                 </div>
+
+                <div 
+                    className={graphicContainerSelectorOn && styles.activetabsUI }
+                    id="front-heading" 
+                    onClick={GraphicClickSet}>
+                   <h1>Graphic Design</h1>
+                </div>
+
                 <div className="tabs__nav">
                     <div className="nav__name">
                         <h1>Jastej Sehra</h1>
@@ -58,9 +73,10 @@ function Tabs() {
                     
                 </div>
             </div>
-            {!codingcontainerSelectorOn && !UIcontainerSelectorOn && <Container/>}
+            {!codingcontainerSelectorOn && !UIcontainerSelectorOn && !graphicContainerSelectorOn && <Container/>}
             { codingcontainerSelectorOn ? <Container/> : null }
             { UIcontainerSelectorOn ? <ContainerUI/> : null}
+            { graphicContainerSelectorOn ? <ContainerGraphic/> : null}
             
             
         </div>
