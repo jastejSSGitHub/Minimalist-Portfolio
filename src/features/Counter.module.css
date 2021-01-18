@@ -66,7 +66,7 @@
   height: 400px;
   margin-top: 60px;
   position: fixed;
-  background: linear-gradient(170deg, rgb(106, 185, 32), rgb(58, 119, 8) 80%);
+  background: linear-gradient(170deg, rgb(106, 185, 32), rgb(33, 68, 4) 80%);
 }
 
 .imagebox5 {
@@ -105,7 +105,7 @@
   height: 400px;
   margin-top: 60px;
   position: fixed;
-  background: linear-gradient(170deg, #eea300, #eea300 80%);
+  background: linear-gradient(170deg, #eea300, #c76000 80%);
 }
 
 .imageemoticon {
@@ -169,9 +169,16 @@
   box-shadow: 8px 8px 8px rgba(5, 5, 5, 0.25) !important;
 }
 
-.activetabsUI {
+.activetabsGraphic {
   background-color: rgb(112, 112, 112) !important;
   color: rgb(255, 255, 255) !important;
   padding: 8px;
   box-shadow: -8px 8px 8px rgba(5, 5, 5, 0.25) !important;
+}
+
+.activetabsUI {
+  background-color: rgb(112, 112, 112) !important;
+  color: rgb(255, 255, 255) !important;
+  padding: 8px;
+  box-shadow: 8px 8px 8px rgba(5, 5, 5, 0.25) !important;
 }

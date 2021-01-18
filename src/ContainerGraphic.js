@@ -1,25 +1,23 @@
-import React,{useRef, useState, useEffect} from 'react'
+import React,{useRef, useState, useEffect, useCallback} from 'react'
 import './ContainerUI.css'
 import ProjectBar from './ProjectBar'
 import {useDispatch} from "react-redux"
 import {useSelector} from "react-redux"
-import {projectTwoIsHovered, projectOneIsHovered, projectThreeIsHovered,
-projectFourIsHovered, projectFiveIsHovered, projectSixIsHovered, projectZeroIsHovered, DarkModeIsOn, codingContainerIsClicked} from "./features/colorSlice"; //selectors
-
-import {darkModeOff, darkModeOn,blueHoveredOff, blueHoveredOn, redHoveredOn,redHoveredOff, 
-yellowHoveredOn,yellowHoveredOff,greenHoveredOn, greenHoveredOff,
- orangeHoveredOn, orangeHoveredOff, pinkHoveredOn, pinkHoveredOff}
-from "./features/colorSlice"; //reducers- states manipulators with dispatch
-import styles from './features/Counter.module.css';
-
-import hoverphoto from './images/hover.png'
-
+import { useHistory} from 'react-router-dom';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
   } from "react-router-dom";
+import {projectTwoIsHovered, projectOneIsHovered, projectThreeIsHovered,
+projectFourIsHovered, projectFiveIsHovered, projectSixIsHovered, projectZeroIsHovered, DarkModeIsOn, codingContainerIsClicked} from "./features/colorSlice"; //selectors
+import {darkModeOff, darkModeOn,blueHoveredOff, blueHoveredOn, redHoveredOn,redHoveredOff, 
+yellowHoveredOn,yellowHoveredOff,greenHoveredOn, greenHoveredOff,
+ orangeHoveredOn, orangeHoveredOff, pinkHoveredOn, pinkHoveredOff}
+from "./features/colorSlice"; //reducers- states manipulators with dispatch
+import styles from './features/Counter.module.css';
+import hoverphoto from './images/hover.png'
 
 let linkedinUrl="https://www.linkedin.com/in/jastej-sehra/";
 
@@ -32,36 +30,38 @@ function ContainerGraphic() {
     const projectFourIsHoveredOpen = useSelector(projectFourIsHovered);
     const projectFiveIsHoveredOpen = useSelector(projectFiveIsHovered);
     const projectSixIsHoveredOpen = useSelector(projectSixIsHovered);
-
     const DarkModeTurnedOn = useSelector(DarkModeIsOn);
-
-
-
     const dispatch = useDispatch();
-
+    
+    const history = useHistory();
+    function handleClick() {
+        history.push("/GoreDrawing");
+      }
     return (
         
         <div className="ContainerUI">
-            <Router>
             <div className="project-container">
                     <div className="project-container-left">
                         <div  className="project-list">
-
                                 <div data-aos="fade-up"
-                                    onMouseEnter={()=> dispatch(redHoveredOn())} 
-                                    onMouseLeave={()=> dispatch(redHoveredOff())} 
-                                    className="projectBar1">
-                                    <a href="https://www.figma.com/proto/71GaizBVRX0PouJipYaCoH/Untitled?node-id=5%3A1996&scaling=min-zoom" target="_blank">
+                                     onMouseEnter={()=> dispatch(redHoveredOn())} 
+                                     onMouseLeave={()=> dispatch(redHoveredOff())} 
+                                     className="projectBar1"
+                                >   {/* I want this ProjectBar component to open the GoreDrawing.js component on click*/}
+                                    {/*<a href="https://www.figma.com/proto/71GaizBVRX0PouJipYaCoH/Untitled?node-id=5%3A1996&scaling=min-zoom" target="_blank">*/}
+                                    <Link to='/abc'>
                                     <ProjectBar 
-                                            title="Website Redesign"
-                                            description="UI/UX Redesign of a tech website that connects developers with clients"
-                                            tag1="UI/UX Redesign"
-                                            tag2="Mockup"
-                                            tag3="Interaction Design"
-                                            hovercolor='#eea300'
-                                            tagcolor=' #ebe2b0'
+                                            title="Interactive Website"
+                                            description="A horror game-like website, with a gore story with three endings. All illustrtaions drawn from scratch to high fidelity images"
+                                            tag1="Interaction Design"
+                                            tag2="Illustrator"
+                                            tag3="AfterEffects"
+                                            hovercolor='#0a7fb6'
+                                            tagcolor=' #b7f2fa'
+                                            
                                     />      
-                                    </a>
+                                    {/*</a>*/}
+                                    </Link>
                                 </div>
                                                          
                                 <div data-aos="fade-up"
@@ -83,22 +83,21 @@ function ContainerGraphic() {
                                 
                                 
                                 
-                                
                             </div>
                     </div>
                     <div className="project-container-right">
                         {!projectOneIsHoveredOpen && !projectTwoIsHoveredOpen && !projectThreeIsHoveredOpen &&
                          !projectFourIsHoveredOpen && !projectFiveIsHoveredOpen && !projectSixIsHoveredOpen && !DarkModeTurnedOn &&
-                            <div data-aos="fade-down" className={styles.imagebox5}>
+                            <div data-aos="fade-down" className={styles.imagebox4}>
                                 <div className="hovertextandimage">
-                                    <h1 className={styles.hovertext}>Hover and Scroll on the list to see my Miscellaneous Graphic projects </h1>
+                                    <h1 className={styles.hovertext}>Hover and Scroll on the list to see my miscellaneous Graphic projects </h1>
                                     <img className={styles.imageemoticon} src={hoverphoto}></img>
                                 </div> 
                             </div>}
                         
                         {projectOneIsHoveredOpen &&
-                            <div className={styles.imageboxui1}>
-                                <img className={styles.gmailimageclass} src={"https://i.ibb.co/fqh6YhF/Frame-1.png"} alt=""/>
+                            <div className={styles.imagebox0}>
+                                <img className={styles.gmailimageclass} src={"https://i.ibb.co/tCggX5y/Frame-1-1.png"} alt=""/>
                             </div>
                         }
 
@@ -108,19 +107,10 @@ function ContainerGraphic() {
                             </div>
                         }
 
-                             
-
-                        
-
-                      
-
                             
-
-                        
                     </div>
                 </div>
 
-            </Router>
             
         </div>
         

@@ -8,6 +8,13 @@ import {Helmet} from "react-helmet";
 import Footer from './Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import GoreDrawing from './GoreDrawing';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 function App() {
@@ -17,12 +24,20 @@ function App() {
     document.title = "Jastej Sehra Portfolio"
  }, []);
   return (
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route exact path="/abc" component={GoreDrawing}>
+              <GoreDrawing/>
+          </Route>
+          <Route path="/">
+            <Tabs />
+            <Footer/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
     
-    <div className="app">
-      <Tabs />
-      
-      <Footer/>
-    </div>
   );
 }
 

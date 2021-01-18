@@ -61,7 +61,7 @@ function Tabs() {
                 </div>
 
                 <div 
-                    className={graphicContainerSelectorOn && styles.activetabsUI }
+                    className={graphicContainerSelectorOn && styles.activetabsGraphic }
                     id="front-heading" 
                     onClick={GraphicClickSet}>
                    <h1>Graphic Design</h1>
