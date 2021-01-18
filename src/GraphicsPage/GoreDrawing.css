@@ -1,0 +1,121 @@
+.app {
+  margin-top: 0;
+}
+.goreDrawing {
+  background: url("https://i.ibb.co/gMLXZbS/Section-Hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  top: 10px;
+  left: 20px;
+  position: absolute;
+}
+.nav__button {
+  margin-top: 20px;
+  position: absolute;
+}
+.back__icon {
+  margin-top: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(115, 128, 201, 0.4) 0%,
+    rgba(79, 86, 122, 0.507) 100%
+  );
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(40px);
+  border-radius: 30px;
+}
+
+.MuiIconButton-label,
+.MuiSvgIcon-root {
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+}
+
+.banner__img {
+  width: 50%;
+  align-items: center;
+  height: auto; /* maintain aspect ratio*/
+  margin: auto;
+  min-width: 100px;
+  max-width: 350px;
+  padding-right: 130px;
+  margin-top: 50px;
+}
+.banner__title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner__title h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  text-shadow: 10px 10px 40px rgba(0, 0, 0, 0.8);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 20px;
+}
+
+.banner__title h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(255, 255, 255);
+  mix-blend-mode: normal;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 20px;
+}
+
+.livelink {
+  margin-top: 100px;
+  height: 25px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(24, 32, 79, 0.4) 0%,
+    rgba(24, 32, 79, 0.25) 100%
+  );
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 30px;
+}

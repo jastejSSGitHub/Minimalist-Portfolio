@@ -8,7 +8,7 @@ import {Helmet} from "react-helmet";
 import Footer from './Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import GoreDrawing from './GoreDrawing';
+import GoreDrawing from './GraphicsPage/GoreDrawing';
 import {
   BrowserRouter as Router,
   Switch,
