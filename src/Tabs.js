@@ -44,14 +44,6 @@ function Tabs() {
     return (
         <div className="tabs">
             <div class="project-heading">
-                
-                <div 
-                    className={UIcontainerSelectorOn && styles.activetabsUI }
-                    id="front-heading" 
-                    onClick={UIClickSet}>
-                   <h1>UI/UX Projects</h1>
-                </div>
-
                 <div 
                     onMouseEnter={()=>{setStyle("black", "#fdfdfd")}}
                     className={codingcontainerSelectorOn && styles.activetabs}
@@ -59,13 +51,21 @@ function Tabs() {
                     id="ux-heading">
                         <h1>Coding Projects</h1>
                 </div>
-
                 <div 
+                    className={UIcontainerSelectorOn && styles.activetabsUI }
+                    id="front-heading" 
+                    onClick={UIClickSet}>
+                   <h1>UI/UX Projects</h1>
+                </div>
+
+                
+
+                {/*<div 
                     className={graphicContainerSelectorOn && styles.activetabsGraphic }
                     id="front-heading" 
                     onClick={GraphicClickSet}>
                    <h1>Graphic Design</h1>
-                </div>
+                </div>*/}
 
                 <div className="tabs__nav">
                     <div className="nav__name">
@@ -78,7 +78,7 @@ function Tabs() {
             {!codingcontainerSelectorOn && !UIcontainerSelectorOn && !graphicContainerSelectorOn && <Container/>}
             { codingcontainerSelectorOn ? <Container/> : null }
             { UIcontainerSelectorOn ? <ContainerUI/> : null}
-            { graphicContainerSelectorOn ? <ContainerGraphic/> : null}
+            {/*{ graphicContainerSelectorOn ? <ContainerGraphic/> : null}*/}
             
             
         </div>
