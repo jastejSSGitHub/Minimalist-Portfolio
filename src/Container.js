@@ -68,6 +68,28 @@ function Container() {
                                     </a>
                                      
                                 </div>
+
+                                <div  
+                                    onMouseEnter={()=> dispatch(yellowHoveredOn())}  
+                                    onMouseLeave={()=> dispatch(yellowHoveredOff())} 
+                                    href={linkedinUrl}
+                                    className="projectBar3">
+                                    <a href="https://linkedin-clone-47bb4.web.app/" target="_blank">
+                                        <ProjectBar 
+                                            title="LinkedIn Web App"
+                                            description="A clone of the recuiting website, with secure authentication, and 
+                                            social networking feature with ability to make dynamic posts stored in Firebase backend"
+                                            tag1="React"
+                                            tag2="Redux"
+                                            tag3="Firebase"
+                                            tag4="Material UI"
+                                            hovercolor=" #dda919"
+                                            tagcolor="#ffcd81"
+                                            />
+                                    </a>
+                                </div>
+
+                                
                                 <div data-aos="fade-up"
                                     onMouseEnter={()=> dispatch(redHoveredOn())} 
                                     onMouseLeave={()=> dispatch(redHoveredOff())} 
@@ -105,25 +127,7 @@ function Container() {
                                     </a>
                                 </div>
                                 
-                                <div  
-                                    onMouseEnter={()=> dispatch(yellowHoveredOn())}  
-                                    onMouseLeave={()=> dispatch(yellowHoveredOff())} 
-                                    href={linkedinUrl}
-                                    className="projectBar3">
-                                    <a href="https://linkedin-clone-47bb4.web.app/" target="_blank">
-                                        <ProjectBar 
-                                            title="LinkedIn Web App"
-                                            description="A clone of the recuiting website, with secure authentication, and 
-                                            social networking feature with ability to make dynamic posts stored in Firebase backend"
-                                            tag1="React"
-                                            tag2="Redux"
-                                            tag3="Firebase"
-                                            tag4="Material UI"
-                                            hovercolor=" #dda919"
-                                            tagcolor="#ffcd81"
-                                            />
-                                    </a>
-                                </div>
+                                
                                
                                 
                                 {/*<div 

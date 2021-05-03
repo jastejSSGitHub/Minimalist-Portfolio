@@ -28,6 +28,48 @@
   margin-top: 60px;
   position: fixed;
 
+  background: linear-gradient(170deg, #057de2, #014175);
+}
+
+.imageboxdashboard {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+
+  background: linear-gradient(170deg, #005eaa, rgb(0, 37, 66));
+}
+
+.imageboxappwebsite {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+
+  background: linear-gradient(170deg, #ff9100, #9b5800);
+}
+
+.imagebox-gamerz {
+  display: flex;
+  justify-content: center;
+  box-shadow: 23px 24px 42px rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  height: 30vh;
+  width: 400px;
+  height: 400px;
+  margin-top: 60px;
+  position: fixed;
+
   background: linear-gradient(170deg, rgb(9, 163, 252), rgb(8, 18, 153) 80%);
 }
 
